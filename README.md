@@ -12,6 +12,5 @@ To create a telegram bot [read this](https://core.telegram.org/bots/#3-how-do-i-
     password=
     ```
 - Install python 3.8 or higher
-- You need to install important packages. Run following 
->$ pip3 install -r requirements.txt
+- You need to install important packages. Run following `$ pip3 install -r requirements.txt`
 - run main.py
