@@ -4,7 +4,7 @@ To create a telegram bot [read this](https://core.telegram.org/bots/#3-how-do-i-
 ## Steps to follow
 - Get telegram bot TOKEN and reddit _client_id_, _client_secret_
 - Make a .env file where you need to write following with correct data.
-    ```
+    ```text
     TOKEN=
     client_id=
     client_secret=
@@ -13,7 +13,11 @@ To create a telegram bot [read this](https://core.telegram.org/bots/#3-how-do-i-
     ```
 - Install python 3.8 or higher
 - You need to install important packages. Run following 
-    ```
+    ```bash
     pip3 install -r requirements.txt
     ```
 - run main.py
+
+---
+**HAPPY CODING***
+---
