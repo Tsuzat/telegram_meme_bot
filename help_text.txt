@@ -1,0 +1,19 @@
+General command to fetch meme:
+
+/meme r-<subreddit> m-<method>
+
+NOTE: The order of subreddit and method can be changed but spacing needs to take very seriously. Spacing between 'r-' and subreddit name can cause undiresed results. Same goes with 'm-' and method.
+
+METHOD: In general a subreddit has 3 kind of posts, 'hot', 'new' and 'top'. These methods are allowed. 
+
+SUBREDDIT: Name of subreddit. Please provide correct name else subreddit API will through error and you cann't get desired result.
+
+DEFAULTS: By default subreddit is set to 'dankmemes' and method is set to 'hot', so typing nothing in field of 'r-' and/or 'm-' will give you default setting result. Moreover you may get a meme by just sending '/meme'
+
+Examples: 
+1. /meme
+2. /meme r-dankmemes 
+3. /meme m-new
+4. /meme r-meme m-hot
+
+HAPPY CODING
