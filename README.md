@@ -19,5 +19,5 @@ To create a telegram bot [read this](https://core.telegram.org/bots/#3-how-do-i-
 - run main.py
 
 ---
-**HAPPY CODING***
+**HAPPY CODING**
 ---
