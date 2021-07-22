@@ -7,7 +7,7 @@ from decouple import config
 def get_request(sub_reddit="dankmemes", topic="hot", limit="50"):
     # load header from json
     with open('headers.json', 'r') as f:
-        print("loading headers.json...")
+        # print("loading headers.json...")
         headers = json.load(f)
 
     # trying to get request

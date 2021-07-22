@@ -41,15 +41,14 @@ def botactions(bot):
     @bot.message_handler(commands=["help"])
     def help(message):
         with open('help_text.txt','r') as f:
-            text = f.readlines()
+            text = f.read()
 
-        msg = "".join(text)
-        bot.reply_to(message, msg)
+        bot.reply_to(message, text)
 
     @bot.message_handler(commands=["meme"])
     def meme(message):
         now = time() # set a start time
-        subreddit, method = get_args_for_meme(message.text) #get arguments 
+        subreddit, method = get_args_for_meme(message.text[6:]) #get arguments 
         data = send_meme(subreddit=subreddit, method=method)
         if data is None:
             bot.reply_to(message, "Couldn't fetch meme, please check the command")
@@ -57,7 +56,7 @@ def botactions(bot):
             title = data['title']
             source = "https://www.reddit.com" + data['permalink']
             url = data['url']
-            caption = f"{title}\nContent Url: {url}\n{source}\nfetched in: {round(time()-now,2)} sec"
+            caption = f"{title}\nurl:{url}\nFrom:{source}\nfetched in: {round(time()-now,2)} sec"
             bot.send_photo(message.chat.id, url, caption)
 
 
